@@ -1,0 +1,29 @@
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: @SemiBold;
+  font-size: 11px;
+  margin-top: 5px;
+  margin-bottom: 7px;
+
+  > li {
+    margin-right: 5px;
+    margin-left: 5px;
+
+    > a {
+      color: #737373;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  > .active {
+      color: #0093bd;
+      text-decoration: underline;
+  }
+}

@@ -1,0 +1,117 @@
+.catalog-product-item {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  width: 232px;
+
+  > form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .image {
+    border: 1px solid #737373;
+  }
+  
+  .info {
+    border: 1px solid #d4d4d4;
+    border-top: none;
+    padding-bottom: 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    > .title {
+      font-family: @SemiBold;
+      font-size: 20px;
+      color: #0093bd;
+      text-align: center;
+      padding-top: 20px;
+    }
+
+    > .price {
+      color: #ff8100;
+      font-size: 20px;
+      text-align: center;
+      font-family: @Black;
+      margin-bottom: 5px;
+
+      div {
+        display: inline-block;
+      }
+
+
+      span {
+        font-family: @Regular;
+        font-size: 16px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    > .size {
+      text-align: center;
+      color: #0093bd;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      span {
+        display: block;
+      }
+
+      .title {
+        margin-bottom: 5px;
+      }
+
+      .block {
+        select {
+          padding: 5px;
+        }
+      }
+    }
+
+    > .color {
+      text-align: center;
+      color: #0093bd;
+      margin-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+      span {
+        display: block;
+      }
+    }
+
+    > .buttons {
+      display: flex;
+      justify-content: space-between;
+
+      .bigimg {
+        margin-left: 37px;
+
+        a {
+          display: block;
+          width: 31px;
+          height: 31px;
+          background: url("../../img/bg-buttom-bigimg.png") no-repeat;
+        }
+      }
+
+      .buy-button {
+        font-family: @SemiBoldItalic;
+        font-size: 15px;
+        color: white;
+        padding: 6px 20px;
+        background: #00658c;
+        border: none;
+        margin-right: 23px;
+      }
+    }
+  }
+}
